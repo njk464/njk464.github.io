@@ -64,7 +64,7 @@ var server = http.createServer(function (request, response) {
     serveStatic(response, cache, absPath);
 });
 
-server.listen(3000, function() {
+server.listen(process.env.PORT || 3000, function() {
     console.log('Server is listening on port 3000');
 });
 
