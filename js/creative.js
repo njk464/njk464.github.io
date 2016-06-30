@@ -75,4 +75,10 @@
         }
     });
 
+    // Personal code
+    $('.restricted_info').click(function(event) {
+        event.preventDefault();
+        alert("This project is in a private repository to maintain Academic Honesty at UT. If you would like to see the code please email me using the contact information below.")
+    })
+
 })(jQuery); // End of use strict
